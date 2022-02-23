@@ -1,6 +1,6 @@
 # README
 
-###Web Application Framework: Ruby on Rails (6.x)
+### Web Application Framework: Ruby on Rails (6.x)
 ### Programming Language: Ruby (2.7.5)
 Ruby on Rails is most popular framework which fascilitates
 Cleaner code, Rapid development than any other frameworks, Increases productivity by 40%
@@ -8,7 +8,7 @@ It comes with built-in Security, Mailers, ORM & some other web development stand
 Ruby Itself is an elegant language, which boosts Readability, Maintainability Out of the box
 
 
-####Architecture: MVC
+### Architecture: MVC
 1. I have been using the most popular architecture for this use case
 2. Link model has validations, business logic
 3. This is Rails's API-only Variant
