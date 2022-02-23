@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "8cab0fe8-f210-48ae-ad38-95902fafa7df",
+		"name": "squizit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/s/8f8bb4d4-3f21-4ae7-ac8e-2f229c6a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"s",
+						"8f8bb4d4-3f21-4ae7-ac8e-2f229c6a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"link\": {\n        \"url\": \"https://www.google.com\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/links/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"links",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
