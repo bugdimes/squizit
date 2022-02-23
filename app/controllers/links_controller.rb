@@ -2,7 +2,7 @@ class LinksController < ApplicationController
 
     def show
         link = Link.find_by_slug(params[:slug]) or not_found
-        link.update(clicked: link.clicked + 1)
+        link.opened!
         redirect_to link.url
     end
 

@@ -20,4 +20,11 @@ class LinkTest < ActiveSupport::TestCase
     link = Link.create(url: 'http://www.testing.com/about-us')
     assert_not_empty link.slug
   end
+
+  test 'open counts increase' do
+    link = Link.create(url: 'http://www.testing.com/about-us')
+    link.opened!
+    link.opened!
+    assert_equal link.clicked, 2
+  end
 end

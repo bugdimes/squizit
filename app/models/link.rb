@@ -7,6 +7,10 @@ class Link < ApplicationRecord
     def slug_empty?
       slug.nil? || slug.empty?
     end
+
+    def opened!
+      update(clicked: clicked + 1)
+    end
   
     private
   
